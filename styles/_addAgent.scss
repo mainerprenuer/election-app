@@ -1,0 +1,83 @@
+.addAgent {
+  display: flex;
+  // height: 80vh;
+  flex-direction: column;
+  // padding: 32px 48px 0 0;
+  margin: 50px auto;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  @include tabletSS {
+    padding: 10px auto;
+  }
+  @include mobileSS {
+    // padding: 120px 20px;
+  }
+
+  .sect {
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 12px 15px;
+    border-radius: 20px;
+    margin-top: 10px;
+    max-width: 450px;
+    // display: none;
+    @include tabletSS {
+      margin-top: 40px;
+    }
+    @include mobileSS {
+      width: 93vw;
+    }
+    h2 {
+      font-size: 2rem;
+      span {
+        font-size: medium;
+        font-weight: 300;
+        padding-left: 10px;
+      }
+    }
+    .btnContainer {
+      width: 100%;
+      display: flex;
+      .buttons {
+        display: flex;
+        max-width: 50%;
+        justify-content: center;
+        margin: 5px auto;
+        padding: 0px 30px;
+      }
+    }
+  }
+  .show {
+    // display: none;
+    visibility: visible;
+  }
+  .hide {
+    display: none;
+    // visibility: hidden;
+  }
+  .alert {
+    padding: 20px;
+  }
+  .success {
+    background-color: #0dc9d6;
+    color: white;
+  }
+  .delete {
+    background-color: #d62f0d;
+  }
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .closebtn:hover {
+    color: black;
+  }
+}

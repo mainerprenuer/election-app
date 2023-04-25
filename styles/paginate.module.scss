@@ -1,0 +1,22 @@
+@import "screensize";
+@import "variables";
+
+.pagination {
+  max-width: 70vw;
+  margin: 0 auto;
+
+  .ul {
+    display: flex;
+    flex-wrap: wrap;
+    // word-wrap: break-word;
+    li {
+      background-color: #fff;
+      padding: 5px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: $primaryColor;
+      border-radius: 5px;
+      margin: 5px;
+    }
+  }
+}

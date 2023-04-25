@@ -1,0 +1,36 @@
+.agentsList {
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 50%;
+    padding: 0;
+    margin-top: 20px;
+    @include tabletSS {
+      margin-top: 80px;
+      width: 80%;
+    }
+  }
+  .agentModal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: aliceblue;
+    color: rgb(84, 81, 81);
+    position: fixed;
+    padding: 15px;
+    margin-top: 20vh;
+    margin-left: 30vw;
+    border-radius: 20px;
+    div {
+      text-align: left;
+
+      p {
+        padding: 12px 10px;
+      }
+    }
+  }
+}

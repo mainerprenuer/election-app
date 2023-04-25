@@ -1,0 +1,28 @@
+@import "screensize";
+@import "variables";
+
+.wardList {
+  .listItem {
+    padding: 10px 10px;
+
+    border-radius: 10px;
+    margin-bottom: 10px;
+    &:hover {
+      background-color: $background1;
+      color: $primaryColor;
+    }
+    .content {
+      padding-left: 20px;
+      p {
+        font-size: small;
+        // padding: 10px 0;
+        line-height: 30px;
+      }
+      .agentType {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+}

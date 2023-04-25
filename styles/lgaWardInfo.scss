@@ -1,0 +1,52 @@
+@import "mixins_pub";
+
+.lgaWardInfo {
+  margin: 100px;
+  background-color: #fff;
+  // padding: 20px;
+  // min-height: 70vh;
+  display: flex;
+
+  .item {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .lgaList {
+    align-content: flex-start;
+
+    .listItem {
+      display: flex;
+      justify-content: space-between;
+      @include listItem;
+    }
+    .selectedListItem {
+      display: flex;
+      background-color: $primaryColor;
+      color: #fff;
+      justify-content: space-between;
+      @include listItem;
+    }
+    button {
+      padding: 5px 15px;
+      margin-left: 20px;
+      background-color: $primaryColor;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.1s ease;
+      border-color: #fff;
+      border-width: 1px;
+      border-style: solid;
+
+      &:hover {
+        background-color: rgb(41, 157, 239);
+      }
+    }
+  }
+  .lgaTitle {
+    padding-left: 20px;
+  }
+}

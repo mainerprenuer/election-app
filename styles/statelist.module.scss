@@ -1,0 +1,62 @@
+@import "screensize";
+@import "variables";
+
+.stateList {
+  // h3 {
+  //   color: aqua;
+  // }
+  .listItem {
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    &:hover {
+      background-color: $background1;
+      color: $primaryColor;
+    }
+    h4 {
+      span {
+        font-size: small;
+        font-weight: 300;
+        padding-left: 10px;
+      }
+    }
+    .content {
+      padding-left: 20px;
+      p {
+        font-size: small;
+        // padding: 10px 0;
+        line-height: 30px;
+      }
+      .agentType {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+.loadingDiv {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 50vh;
+
+  h3 {
+    padding: 0 auto;
+    color: $primaryColor;
+    margin: 0 auto;
+  }
+}
+.errorDiv {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 50vh;
+
+  h3 {
+    padding: 0 auto;
+    color: red;
+    margin: 0 auto;
+  }
+}

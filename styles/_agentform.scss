@@ -1,0 +1,64 @@
+.agentFormWrapper {
+  padding: 30px 40px;
+  margin-left: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .headTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-align: center;
+    .h3 {
+      font-weight: 300;
+    }
+  }
+  .images {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    .logo {
+      width: 120px;
+      height: 95px;
+    }
+  }
+  span {
+    padding-left: 10px;
+    font-weight: 400;
+  }
+  .imagesProfile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+    img {
+      width: 15rem;
+      //   height: fit-content;
+      max-height: 15rem;
+      object-fit: cover;
+    }
+  }
+  .content {
+    padding: 20px;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // margin: 0 auto;
+    width: 50vw;
+    @include tabletSS {
+      width: 100%;
+    }
+  }
+  @include tabletSS {
+    margin: 0;
+    padding: 50px 50px;
+  }
+  @include mobileSS {
+    margin: 0;
+    padding: 50px 40px;
+  }
+}
